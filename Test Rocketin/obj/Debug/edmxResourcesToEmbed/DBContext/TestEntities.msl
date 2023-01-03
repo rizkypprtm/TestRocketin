@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TestModelStoreContainer" CdmEntityContainer="TestEntities">
+    <EntitySetMapping Name="m_user">
+      <EntityTypeMapping TypeName="TestModel.m_user">
+        <MappingFragment StoreEntitySet="m_user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="m_movie">
+      <EntityTypeMapping TypeName="TestModel.m_movie">
+        <MappingFragment StoreEntitySet="m_movie">
+          <ScalarProperty Name="views" ColumnName="views" />
+          <ScalarProperty Name="watch_url" ColumnName="watch_url" />
+          <ScalarProperty Name="genres" ColumnName="genres" />
+          <ScalarProperty Name="artist" ColumnName="artist" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="desciption" ColumnName="desciption" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id_movie" ColumnName="id_movie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

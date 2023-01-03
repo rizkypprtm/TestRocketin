@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "407c0d87-31dc-402c-b414-f622ef5c21e3",
+		"name": "Rocketin API DOCs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24327855"
+	},
+	"item": [
+		{
+			"name": "GetListMovie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:61400//Movie/GetListMovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61400",
+					"path": [
+						"",
+						"Movie",
+						"GetListMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetListMovieFilter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"bang\",\r\n  \"description\": \"\",\r\n  \"artis\": \"\",\r\n  \"genres\": \"\",\r\n  \"watch_url\": \"\",\r\n  \"TakePage\": 1,\r\n  \"TakeCount\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:61400//Movie/GetListMovieFilter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61400",
+					"path": [
+						"",
+						"Movie",
+						"GetListMovieFilter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertMovie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"sincan\",\r\n  \"description\": \"bocah\",\r\n  \"artis\": \"sincan\",\r\n  \"duration\": 60,\r\n  \"genres\": \"comedy\",\r\n  \"watch_url\": \"wwwwwwww\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:61400//Movie/InsertMovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61400",
+					"path": [
+						"",
+						"Movie",
+						"InsertMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMovie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id_movie\": 7,\r\n  \"title\": \"updateeeee sincan\",\r\n  \"description\": \"hahaha\",\r\n  \"artis\": \"misaeeee\",\r\n  \"duration\": 99,\r\n  \"genres\": \"comedy\",\r\n  \"watch_url\": \"wsssss\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:61400//Movie/UpdateMovie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61400",
+					"path": [
+						"",
+						"Movie",
+						"UpdateMovie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCountView",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:61400/Movie/UpdateCountView?MovieID=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61400",
+					"path": [
+						"",
+						"Movie",
+						"UpdateCountView"
+					],
+					"query": [
+						{
+							"key": "MovieID",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMovieViewship",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:61400//Movie/GetMovieViewship",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "61400",
+					"path": [
+						"",
+						"Movie",
+						"GetMovieViewship"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="m_movie">
+    <Key>
+      <PropertyRef Name="id_movie" />
+    </Key>
+    <Property Name="id_movie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="50" />
+    <Property Name="desciption" Type="varchar(max)" />
+    <Property Name="duration" Type="int" />
+    <Property Name="artist" Type="varchar" MaxLength="50" />
+    <Property Name="genres" Type="varchar" MaxLength="50" />
+    <Property Name="watch_url" Type="varchar" MaxLength="50" />
+    <Property Name="views" Type="int" />
+  </EntityType>
+  <EntityType Name="m_user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="20" />
+    <Property Name="password" Type="varchar" MaxLength="20" />
+    <Property Name="role" Type="int" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="createdBy" Type="int" />
+  </EntityType>
+  <EntityContainer Name="TestModelStoreContainer">
+    <EntitySet Name="m_movie" EntityType="Self.m_movie" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="m_user" EntityType="Self.m_user" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
